@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poopins:400,500,700');
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-family: 'Poopins' ,san-serif;
+	color: #222;
+}
+
+.navbar {
+	padding: .8rem;
+}
+
+.navbar .active{
+	border-bottom: 3px solid #707070 ;
+}
+
+.navbar-nav li{
+	padding-right: 15px;
+	padding-left: 15px;
+	/*padding: 15px 15px 0px 0px;*/
+}
+
+.navbar-nav li a:hover{
+	border-right: 3px solid #707070;
+	border-left: 3px solid #707070;
+	transition: 0.5s all;
+}
+
+.nav-link{
+	font-size: 1.1em !important;
+}
+
+
+
+
+
+
+
+.fa-facebook{
+	color: #3b5998; font-size: 0.5em;
+}
+
+.fa-envelope{
+	color: #B23121; font-size: 0.5em;
+}
+.fa-wordpress{
+	color: #21759b; font-size: 0.5em;
+}
+.fa-instagram{
+	color: #c1558b; font-size: 0.5em;
+}
+.fa-youtube{
+	color: #bb0000; font-size: 0.5em;
+}
+ .fa-facebook:hover,
+ .fa-envelope:hover,
+ .fa-wordpress:hover,
+ .fa-instagram:hover,
+ .fa-youtube:hover{
+ 		color: #d5d5d5;
+ 		font-size: 0.7em;
+ }
+
+
+footer{
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+
+}
+
+
+hr.light{
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+footer a{
+	color: #d5d5d5;
+}
+hr.light100 {
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+.social a{
+	font-size: 4.5em;
+	padding: 3rem;
+}
+
+/*side bar*/
+
+
+		.wrapper {
+    display: block;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* top layer */
+    z-index: 9999;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+}
+/* display .overlay when it has the .active class */
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+}
+
+/*end*/
+
+
+
+
+
+
+
+
+
+/*--- Media Queries---*/
+
+@media (max-width: 992px) {
+	.social a{
+		font-size: 4em;
+		padding: 2rem;
+	}
+}  
+
+
+
+
+
+
+@media (max-width: 768px) {
+		.navbar-toggler{
+		margin: 10px 0px 10px 30px;
+		background-color: #888888;
+		
+	}
+	.navbar-toggler:hover, .navbar-toggler:focus{
+			background-color: #fff;
+					border-color: #000000;
+	}
+
+	.navbar-light{
+		background-color: #fff;
+	}
+	.navbar-nav li a{
+		text-align: center;
+		background-color: #C0C0C0;
+	}
+	.navbar-nav li a:hover{
+		background-color: #E8E8E8;
+	}
+
+	.navbar .active{
+	border-bottom: 3px solid transparent ;
+	}
+
+
+	.social a{
+		font-size: 2.5em;
+		padding: 1.2rem;
+	}
+}
